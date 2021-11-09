@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Blinker:wght@200;400;700&family=Public+Sans:wght@300;400;700&family=Tinos:wght@400;700&display=swap");
 @import "_config";
 @import "_header";
 @import "_hero";
@@ -17,6 +18,7 @@
 body {
     background-color: getColor(primary);
     font-size: 100%;
+    font-family: "Tinos", serif;
 }
 a {
     text-decoration: none;

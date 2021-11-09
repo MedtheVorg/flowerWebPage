@@ -23,6 +23,7 @@
     @include mobile {
         &::after {
             width: 80%;
+            top: 10%;
         }
     }
 
@@ -40,10 +41,16 @@
         .title {
             font-size: 3rem;
             font-weight: 200;
+            @include mobile {
+                font-size: 2.5rem;
+            }
         }
         .sub-title {
             font-size: 1.5rem;
             margin-top: 1.5rem;
+            @include mobile {
+                font-size: 1rem;
+            }
         }
 
         .cta-btn {
@@ -51,6 +58,9 @@
             padding: 0.6rem 2.5rem;
             background-color: #e6e3d4;
             margin-top: 1.5rem;
+            @include mobile {
+                margin-top: 2.5rem;
+            }
         }
         .social-icons {
             position: absolute;

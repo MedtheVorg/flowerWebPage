@@ -1,0 +1,68 @@
+.gifts {
+    background-color: #fefefe;
+
+    .container {
+        display: flex;
+        // gap: 10rem;
+        // justify-content: space-between;
+        padding-block: 5rem;
+        position: relative;
+        @include mobile {
+            flex-direction: column;
+        }
+
+        .gifts-content {
+            text-align: center;
+            width: 30%;
+            align-self: center;
+            margin-left: 2rem;
+            @include mobile {
+                width: 100%;
+                margin: 0;
+            }
+            > p:first-child {
+                color: getColor(primary);
+                text-transform: uppercase;
+                margin-bottom: 1.5rem;
+                font-size: 0.9rem;
+            }
+            h2 {
+                font-size: 2rem;
+                font-weight: 200;
+                margin-bottom: 2rem;
+            }
+
+            .letsGBtn {
+                display: inline-block;
+                margin-top: 3rem;
+                background-color: getColor(secondary);
+                padding: 0.5rem 1.8rem;
+                transition: opacity 300ms ease-in-out;
+
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+        }
+        .gifts-img {
+            border: 1px solid #252525;
+            border-radius: 0% 0% 99vw 99vw;
+            overflow: hidden;
+            background-image: url(../images/flower4.jpg);
+            background-position: center center;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            // background-origin: border-box;
+            min-width: 50%;
+            height: 600px;
+            position: absolute;
+            top: 0%;
+            right: -5%;
+            // height: 600px;
+            // width: 50%;
+            @include mobile {
+                display: none;
+            }
+        }
+    }
+}

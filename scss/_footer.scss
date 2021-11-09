@@ -1,0 +1,87 @@
+.footer {
+    background-color: #ece3d4;
+    border-top: 3px solid #a7a692;
+    .footer-main {
+        display: flex;
+        justify-content: space-between;
+        padding: 3rem 3rem;
+        @include mobile {
+            flex-direction: column;
+        }
+
+        .footer-form {
+            width: 80%;
+            @include mobile {
+                width: 100%;
+                margin-bottom: 2rem;
+                text-align: left;
+            }
+            h2 {
+                font-size: 2rem;
+                color: #252525;
+                text-transform: uppercase;
+                font-weight: 400;
+                margin-bottom: 1rem;
+            }
+
+            form {
+                margin-top: 3rem;
+
+                @include mobile {
+                    margin-top: 1rem;
+                }
+                input {
+                    padding: 0.5rem 1rem;
+                    font-weight: bold;
+                }
+                .subscribeBtn {
+                    display: inline-block;
+                    background-color: #e3cdb5;
+                    padding: 0.5rem 1.8rem;
+                    transition: opacity 300ms ease-in-out;
+                    border: 0;
+                    cursor: pointer;
+
+                    &:hover {
+                        opacity: 0.8;
+                    }
+                }
+            }
+        }
+        .footer-links {
+            display: flex;
+            justify-content: space-between;
+            gap: 2rem;
+            @include mobile {
+                flex-direction: column;
+                text-align: left;
+            }
+
+            div > * {
+                margin-top: 0.4rem;
+            }
+
+            a {
+                display: block;
+            }
+        }
+    }
+
+    .footer-secondary {
+        padding: 1rem 3rem;
+        color: white;
+        background-color: #e0ceb6;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-social-icons {
+            a {
+                font-size: 0.5rem;
+            }
+            a:not(:first-child) {
+                margin-left: 1rem;
+            }
+        }
+    }
+}

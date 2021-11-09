@@ -1,0 +1,51 @@
+.popular {
+    background-color: #e5cdb5;
+    .container {
+        padding-block: 5rem;
+
+        text-align: center;
+        > p {
+            color: getColor(primary);
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+        }
+        h2 {
+            font-size: 2rem;
+            font-weight: 200;
+            margin-bottom: 2rem;
+        }
+
+        .products {
+            display: flex;
+            justify-content: space-between;
+            gap: 2rem;
+            @include mobile {
+                flex-wrap: wrap;
+            }
+            .product {
+                width: 20%;
+                @include mobile {
+                    width: 100%;
+                }
+
+                .product-img {
+                    border: 1px solid #252525;
+
+                    height: 80%;
+                    @include mobile {
+                        width: 100%;
+                    }
+                }
+                .product-stats {
+                    font-size: 0.8rem;
+                    font-weight: bold;
+                    padding-top: 1rem;
+                    padding-inline: 1.5rem;
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
+}

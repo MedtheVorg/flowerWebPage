@@ -1,0 +1,58 @@
+.header {
+    background-color: #ece3d4;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5rem 0rem;
+        @include mobile {
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .logo {
+            font-size: 2rem;
+        }
+        .nav-bar {
+            &-list {
+                list-style: none;
+                display: flex;
+
+                &-item {
+                    font-size: 0.8rem;
+                    &-link:not(#shopbtn) {
+                        position: relative;
+
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            left: 0%;
+                            bottom: -15%;
+                            height: 3px;
+                            width: 0%;
+                            background-color: #c9b09a;
+                            transition: all 300ms ease-in-out;
+                        }
+
+                        &:hover::after {
+                            width: 100%;
+                        }
+                    }
+                }
+                &-item:not(:first-child) {
+                    margin-left: 3rem;
+                }
+                #shopbtn {
+                    background-color: getColor(secondary);
+                    padding: 0.5rem 1.8rem;
+                    transition: opacity 300ms ease-in-out;
+
+                    &:hover {
+                        opacity: 0.8;
+                    }
+                }
+            }
+        }
+    }
+}

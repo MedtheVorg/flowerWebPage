@@ -20,7 +20,3 @@
 - Pure JavaScript
 
 
-## Table of contents
-- [Screenshot](#screenshot)
-- [Built with](#built-with)
-
